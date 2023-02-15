@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
 
-    static int employeesNumber = 1;
+    static int employeesNumber = 5;
 
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<>();
@@ -25,7 +25,7 @@ public class Main {
                 case 1 -> company.printAllEmployeesSalary(employees);
                 case 2 -> company.getEmployeesData(employees);
                 case 3 -> {
-                    collector.scanner.nextLine();
+                    collector.getScanner().nextLine();
                     company.addEmployee(collector.getEmployeeData());
                 }
             }

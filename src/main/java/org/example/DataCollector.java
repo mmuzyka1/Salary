@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class DataCollector {
 
-    Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     public Employee getEmployeeData() {
         String firstName = getFirstName();
@@ -55,6 +55,10 @@ public class DataCollector {
 
     public int getMenuOption() {
         return scanner.nextInt();
+    }
+
+    public Scanner getScanner() {
+        return scanner;
     }
 }
 
